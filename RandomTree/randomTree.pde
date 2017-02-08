@@ -12,10 +12,21 @@ void setup() {
 
 void draw() {
   
-  for (int i = 0; i < paths.length; i++) {
+  for (int i=0; i < paths.length; i++) {
     PVector loc = paths[i].location;
     float diam = paths[i].diameter;
     ellipse(loc.x, loc.y, diam, diam);
+    
+    // add colors to tree limbs
+    if (diam > 2){
+      fill(139, 69, 19); // brown
+    }
+    if (diam < 2 && diam > 1.5){
+      fill(0, 128, 0); // dark green
+    }
+    if (diam < 1.5 && diam > 1){
+      fill(0, 150 ,20); // light green 
+    }
     paths[i].update();
   }
 }
