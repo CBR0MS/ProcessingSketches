@@ -12,7 +12,7 @@ void setup() {
 
 void draw() {
   
-  for (int i=0; i < paths.length; i++) {
+  for (int i = 0; i < paths.length; i++) {
     PVector loc = paths[i].location;
     float diam = paths[i].diameter;
     ellipse(loc.x, loc.y, diam, diam);
