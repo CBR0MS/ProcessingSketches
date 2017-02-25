@@ -1,6 +1,7 @@
 pathfinder[] paths;
 
 void setup() {
+
   size(800, 600);
   background(0);
   ellipseMode(CENTER);
@@ -13,9 +14,9 @@ void setup() {
 void draw() {
   
   for (int i=0; i < paths.length; i++) {
-    PVector loc = paths[i].location;
-    float diam = paths[i].diameter;
-    ellipse(loc.x, loc.y, diam, diam);
+  
+    PVector location = paths[i].location;
+    ellipse(location.x, location.y, paths[i].diameter, paths[i].diameter);
     
     // add colors to tree limbs
     if (diam > 2){
@@ -27,12 +28,14 @@ void draw() {
     if (diam < 1.5 && diam > 1){
       fill(0, 150 ,20); // light green 
     }
+    
     paths[i].update();
   }
 }
 
 // redraw on mouse press
 void mousePressed() {
+
   background(0);
   paths = new pathfinder[1];
   paths[0] = new pathfinder();
