@@ -18,16 +18,16 @@ void draw() {
     PVector location = paths[i].location;
     ellipse(location.x, location.y, paths[i].diameter, paths[i].diameter);
     
-    // add colors to tree limbs
-    if (diam > 2){
-      fill(139, 69, 19); // brown
-    }
-    if (diam < 2 && diam > 1.5){
-      fill(0, 128, 0); // dark green
-    }
-    if (diam < 1.5 && diam > 1){
-      fill(0, 150 ,20); // light green 
-    }
+    //// add colors to tree limbs
+    //if (diam > 2){
+    //  fill(139, 69, 19); // brown
+    //}
+    //if (diam < 2 && diam > 1.5){
+    // fill(0, 128, 0); // dark green
+    //}
+    //if (diam < 1.5 && diam > 1){
+    // fill(0, 150 ,20); // light green 
+    //}
     
     paths[i].update();
   }
