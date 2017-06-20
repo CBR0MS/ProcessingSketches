@@ -16,7 +16,6 @@ CDN: None
 Links to: None
 
 */
-// TODO: issue with entering update()
 
 var paths = []; // array of pathfinder objects
 
