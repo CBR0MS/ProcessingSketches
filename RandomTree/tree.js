@@ -45,6 +45,13 @@ function draw() {
  }
 }
 
+function windowResized() {
+  clear();
+  paths = [];
+  // this is where we would adjust the canvas to fit the window
+  setup();
+}
+
 // pathfinder class
 function pathfinder(parent) {
 
