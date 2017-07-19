@@ -1,22 +1,3 @@
-/*
-  ___ ____
- / __|    |
-/ /  |___ /
-\ \__|    \
- \___|____|
-
-code by CB -> www.christianbroms.com
-
-File: sketh.js
-Desc: animation of tree growing on landing page using p5.js
-Created on: 06/19/17
-Requires: main.html (for CDNs)
-Dependants: main.html
-CDN: None
-Links to: None
-
-*/
-
 // global variables
 var paths = []; // array of pathfinder objects
 var reps = 0;
